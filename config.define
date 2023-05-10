@@ -1,0 +1,14 @@
+{
+	"socket.io.min.js": {
+		"JSfiles": [
+			"src/socket.io.js"
+		],
+		"params": "-s -c skip"
+	},
+	"synologyapplicationgateway.bundle.min.js":{
+		"JSfiles": [
+			"dist/synologyapplicationgateway.bundle.js"
+		],
+		"params": "-s -c skip"
+	}
+}

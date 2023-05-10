@@ -1,0 +1,51 @@
+{
+    "name": "HelloVue",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "devDependencies": {
+        "@babel/core": "7.20.5",
+        "@babel/eslint-parser": "7.19.1",
+        "@babel/preset-env": "7.20.2",
+        "@babel/runtime": "7.20.6",
+        "@synology/eslint-plugin-vue-synology": "^9.24.0",
+        "@synology/unplugin-svc": "^9.24.0",
+        "babel-loader": "9.1.0",
+        "babel-plugin-syntax-dynamic-import": "6.18.0",
+        "css-loader": "6.7.2",
+        "eslint": "8.23.1",
+        "eslint-plugin-vue": "9.1.1",
+        "eslint-webpack-plugin": "3.2.0",
+        "mini-css-extract-plugin": "2.6.0",
+        "postcss": "8.4.14",
+        "postcss-loader": "4.3.0",
+        "postcss-preset-env": "7.7.2",
+        "sass": "1.56.1",
+        "sass-loader": "12.6.0",
+        "terser-webpack-plugin": "5.3.6",
+        "@vue/runtime-dom": "3.2.45",
+        "@vue/compiler-sfc": "3.2.47",
+        "vue-loader": "17.0.1",
+        "vue-router": "4.1.6",
+        "vue-style-loader": "4.1.2",
+        "webpack": "5.73.0",
+        "webpack-cli": "4.10.0",
+        "webpack-dev-server": "4.10.0",
+        "webpack-merge": "5.8.0"
+    },
+    "description": "My webpack project",
+    "scripts": {
+        "dev": "webpack --config build/webpack.package.dev.config.js --progress --watch",
+        "build": "webpack --config build/webpack.package.prod.config.js --bail",
+        "start": "webpack serve --config build/webpack.package.dev.config.js ",
+        "lint": "eslint --fix -c .eslintrc.js ./src/ --ext .js,.vue"
+    },
+    "dependencies": {
+        "@synology/SynoVueComponents": "^10.0.0-alpha.0",
+        "@synology/svc-icons2": "^10.0.0-alpha.0",
+        "core-js": "^3.25.1",
+        "normalize.css": "^8.0.1",
+        "regenerator-runtime": "^0.13.7",
+        "vue": "3.2.45"
+    }
+}

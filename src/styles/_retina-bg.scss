@@ -1,0 +1,9 @@
+@mixin retina-bg($img, $style: null) {
+	$image-1x: "~common-assets/1x/" + $img;
+	$image-1_5x: "~common-assets/2x/" + $img;
+	$size-image: $image-1x;
+    background-image: image-set(
+        url($image-1x) 1x,
+        url($image-1_5x) 1.5x
+    ) $style;
+}
